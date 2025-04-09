@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './components/Home';
-import Projects from './assets/Projects'
+import Projects from './components/Project'
 
 function App() {
   return (
