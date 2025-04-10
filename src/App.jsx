@@ -1,14 +1,9 @@
 import React from 'react';
-import Home from './components/Home';
-import Projects from './components/Project'
+import Home from './components/Home'; 
+// import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <Home />
-      <Projects />
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
