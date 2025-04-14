@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Mail, Linkedin, Menu, X, ChevronDown } from 'lucide-react';
 import './Home.css';
+import { ProjectList } from './Project';
 
 const Portfolio = () => {
   const [isMenu, setIsMenu] = useState(false);
@@ -13,6 +14,22 @@ const Portfolio = () => {
   }, []);
 
   const toggleMenu = () => setIsMenu(!isMenu);
+
+
+
+
+
+  const projects = [
+    {
+      name: "Mindful Journal",
+      image : "../assets/mindful-journal.jpeg",
+      deployed: 'https://aaru5h.github.io/journal/',
+      code: 'https://github.com/Aaru5h/journal'
+    }
+  ]
+
+
+
 
   return (
     <div className="portfolio-container">
@@ -75,7 +92,7 @@ const Portfolio = () => {
               <div className="profile-glow-outer"></div>
               <div className="profile-glow-inner"></div>
               <div className="profile-image-container">
-                <img src="../assets/dummy.JPG" alt="Profile" className="profile-image" />
+                <img src="../assets/dummy.jpg" alt="Profile" className="profile-image" />
                 <div className="profile-overlay"></div>
               </div>
               <div className="profile-accent-cyan"></div>
